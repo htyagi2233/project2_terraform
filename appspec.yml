@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html
+  - source: /  # From the source location in your repository
+    destination: /var/www/html  # Where to copy the files on the EC2 instance
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies.sh
